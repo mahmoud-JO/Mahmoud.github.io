@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<meta charset="UTF-8">
+
+<script>
+
+function validateForm(){
+
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var country = document.getElementById("country").value;
+var comments = document.getElementById("comments").value;
+
+if(name=="" || email=="" || country=="" || comments==""){
+alert("Please fill all fields");
+return false;
+}
+
+alert("Form submitted successfully!");
+return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Contact Me</h1>
+
+<form onsubmit="return validateForm()">
+
+Full Name:<br>
+<input type="text" id="name"><br><br>
+
+Email:<br>
+<input type="email" id="email"><br><br>
+
+Country:<br>
+<input type="text" id="country"><br><br>
+
+Comments:<br>
+<textarea id="comments"></textarea><br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<br>
+
+<a href="professional portfolio website.html">Back to Home</a>
+
+</body>
+</html>
